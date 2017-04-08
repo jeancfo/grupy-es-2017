@@ -213,7 +213,7 @@ section header h2 {
     width:100%;
     max-height: auto;
     height:600px;
-    background:url(../img/top-bg.png) bottom center no-repeat;
+    background:url(../img/top-bg.jpg) bottom center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -345,5 +345,70 @@ section header h2 {
 
 }
 
+#palestras{
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: solid 1px #ccc;
+    border-bottom-width: 70%;
+    min-height: 300px;
+}
 
+#palestras h6{
+    text-align: left;
+}
+
+#palestras h6{
+    text-align: left;
+    padding-bottom: 2px;
+}
+
+#palestras p{
+    text-align: left;
+    padding-bottom: 0px;
+}
+
+#palestras .horario{
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#palestras span{
+    text-align: center !important;
+}
+
+
+#palestras .palestrantes{
+    border-radius: 4px;
+    border-color: #fefefe;
+    float: left;
+    margin-right: 30px;
+    margin-top: 12px;
+}
+
+.horario-extra{
+    background-color: #999;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.separador{
+    height: 10px;
+    background: none;
+    border: none;
+}
+
+.top-text{
+    text-shadow: 1px 2px 2px #000;
+}
+
+#sponsors .img-responsive{
+    margin: 10px;
+}
 /* Fim Customização */

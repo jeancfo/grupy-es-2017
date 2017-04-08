@@ -15,7 +15,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="static/css/font-awesome.min.css">
         <link rel="stylesheet" href="static/css/basalstyle/style.min.css">
-        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/main.css?ver=2">
 
         <link href='https://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
         
@@ -45,7 +45,9 @@
                     <ul>
                         <li><a data-scroll href="#overview">Conferência</a></li>
                         <li><a data-scroll href="#agenda">Agenda</a></li>
+                        <li><a data-scroll href="#apoie">Apoie</a></li>
                         <li><a data-scroll href="#sponsors">Patrocinadores</a></li>
+                        <li><a data-scroll href="#comunidade">Grupy-es</a></li>
                         <li><a data-scroll href="#register">Inscrição</a></li>
                         <li><a data-scroll href="#venue">Local</a></li>
 			<li><img class="img-responsive" src="static/img/logo.png"/></li>
@@ -57,7 +59,7 @@
 
       	<!-- TOP -->
         <section id="top" data-stellar-background-ratio="0.5">
-        	<div class="countdown text-align-center row desktop-12 container">
+        	<div class="countdown text-align-center row desktop-12 container top-text">
             	<h1 class="uppercase">Conferência Python Espírito Santo 2017</h1>
                 <h3>Brasil - 29 de Abril de 2017</h3>
             </div>
@@ -68,18 +70,13 @@
         	<div class="overview text-align-center row desktop-12 min-h-15 padding-top-2 container">
             	<i class="fa fa-5x fa-globe"></i>
             	<h2>A Conferência</h2>
+
+                <img class="img-responsive" src="static/img/logo_python_es.jpg" width="300" alt="logo">
                 <p class="lead">
                     A Conferência Python Espírito Santo 2017 reúne um grupo de pessoas durante todo o dia para
                     discutir sobre software livre, práticas de desenvolvimento e Python. Cada palestra terá 40 minutos,
                     sendo 30 para a palestra e 10 para perguntas e elas serão aceitas até o dia 22 de Abril de 2017.
-
                 </p>
-                <p class="lead">
-                    Inscrição como palestrante:<br/>
-                    <a class="btn-basic btn-blue" data-scroll target="_blank" href="https://docs.google.com/a/ucl.br/forms/d/e/1FAIpQLScTq3aejIRZjAawRg48Y5k0HSy65bCazWwZLv-mV4i12npqdQ/viewform">
-                    Proposta de Palestra </a>
-                </p>
-
             	<p>
                     <a class="btn-basic btn-blue" data-scroll href="#register">Garanta a sua vaga!</a>
                 </p>
@@ -89,37 +86,126 @@
         <!-- Agenda -->
         <section id="agenda">
             <div class="overview text-align-center row desktop-12 min-h-15 padding-top-2 container">
-		<h3>Agenda</h3>        
-		<p>
-		    08:00 - Reception<br/>
-		    08:20 - Breakout 1<br/>
-		    09:10 - Breakout 2<br/>
-		    10:00 - Breakout 3<br/>
-		    10:50 - Lightning Talks<br/>
-		    11:40 - Lunch<br/>
-		    14:00 - Breakout 4<br/>
-		    14:50 - Breakout 5<br/>
-		    15:40 - Breakout 6<br/>
-		    16:30 - Lightning Talks<br/>
-		    17:20 - Closing<br/>
-		</p>
+		    <h3>Agenda</h3>
+
+            <span class="horario-extra">08:00h - Reception</span>
+            <hr class="separador"/>
+            <div id="palestras">
+                <span class="horario">08:20h - Breakout 1</span><br/>
+                <img class="palestrantes" width="200" src="static/img/palestrante_pedro.jpg">
+                <p>Palestrante: <strong>Pedro Moreno</strong></p>
+                <h6>Introdução ao Python</h6>
+                <p>
+                Mostrar fundamentos da programação e como a linguagem python viabiliza os elementos em uma linguagem dinâmica com tratamento de erro de excelente qualidade com o uso das exceptions e explicando o "duck type" e finalizando com comandos básicos para auto conhecimento no python como dir() e help().
+                </p>
+
+            </div>
+
+            <div id="palestras">
+                <span class="horario">09:10h - Breakout 2</span><br/><br/>
+                <img class="palestrantes" width="200" src="static/img/palestrante_gabriel.jpg">
+                <p>Palestrante: <strong>Gabriel Cypriano Saca</strong></p>
+                <h6>Pacotes e Ferramentas Python para Data Science e Machine Learning</h6>
+                <p>
+                    Introdução aos pacotes e ferramentas Python utilizados em Data Science e Machine Learning, como por exemplo Jupyter Notebook, NumPy, SciPy, Matplotlib, Pandas e Scikit-learn.
+                </p>
+            </div>
+
+            <div id="palestras">
+                <span class="horario">10:00h - Breakout 3</span><br/><br/>
+                <img class="palestrantes" width="200" src="static/img/palestrante_fabricio.jpg">
+                <p>Palestrante: <strong>Fabricio Vargas Matos</strong></p>
+                <h6>Sistemas de recomendação de conteúdo usando Machine Learning e TensorFlow</h6>
+                <p>
+                    O objetivo é mostrar para programadores sem conhecimento prévio em ML e TF como, em linhas gerais, usar TensorFlow para implementar um sistema de recomendação eficiente e escalável. O algoritmo implementado seria um 'Model Based Collaborative Filtering' que agrupa os items recomendados em 'Latent Factors', identificados dinamicamente via 'Gradient Descend Optimization'.
+                </p>
+            </div>
+
+
+            <hr class="separador"/>
+            <span class="horario-extra">10:50h - Lightning Talks</span>
+            <hr class="separador"/>
+            <span class="horario-extra">11:40h - Lunch</span>
+            <hr class="separador"/>
+
+            <div id="palestras">
+                <span class="horario">14:00h - Breakout 4</span><br/><br/>
+                <img class="palestrantes" width="200" src="static/img/palestrante_guilherme.jpg">
+                <p>Palestrante: <strong>Guilherme Mauro</strong></p>
+                <h6>Análise e Processamento de Imagens com OpenCV</h6>
+                <p>
+                    Conceitos básicos do módulo OpenCV e suas funções. Serão apresentados exemplos práticos e desenvolverei uma aplicação durante a palestra.
+                </p>
+            </div>
+
+            <div id="palestras">
+                <span class="horario">14:50h - Breakout 5</span><br/><br/>
+                <img class="palestrantes" width="200" src="static/img/palestrante_bernado.jpg">
+                <p>Palestrante: <strong>Bernardo Fontes</strong></p>
+                <h6>TDD com Mock e Orientação a Objetos</h6>
+                <p>
+                    Não podemos nos esquecer que teste também é código! Nessa apresentação falo sobre como podemos utilizar a estratégia do uso de Mocks para a escrita de testes mais assertivos e simples.
+                </p>
+            </div>
+            <div id="palestras">
+                <span class="horario">15:40h - Breakout 6</span><br/><br/>
+                <img class="palestrantes" width="200" src="static/img/palestrante_rafael.jpg">
+                <p>Palestrante: <strong>Rafael dos Santos</strong></p>
+                <h6>Azure + Python - Usando o poder da nuvem para expandir sua aplicação</h6>
+                <p>
+                    Mostrar como os padrões de desenvolvimento em nuvem junto com os benefícios do Microsoft Azure podem dar um upgrade em aplicações Python, desde simples protótipos ate aplicações de escala global.
+                </p>
+            </div>
+
+            <hr class="separador"/>
+            <span class="horario-extra">16:30h - Lightning Talks</span>
+            <hr class="separador"/>
+            <span class="horario-extra">17:20h - Closing</span>
+            <hr class="separador"/>
+
+            </div>
+        </section>
+
+        <!-- Apoie -->
+        <section id="apoie">
+        	<div class="sponsors text-align-center row desktop-12 min-h-15 padding-bottom-2 container">
+
+                <h2>Apoie o Evento e ganhe uma camisa</h2>
+                <div class="sponsor-slider min-h-6">
+                    <img class="img-responsive" src="static/img/camisa_python.jpg" width="180" alt="logo">
+                </div>
+                <p>Interessado? Descubra como apoiar o evento.</p>
+                <a class="btn-basic btn-blue" target="_blank" href="https://www.catarse.me/conferencia_python_espirito_santo_2017_d5d7?ref=project_link">Apoie</a>
+
             </div>
         </section>
 
         <!-- SPONSORS -->
         <section id="sponsors">
-        	<div class="sponsors text-align-center row desktop-12 min-h-15 padding-bottom-2 container">
+            <div class="sponsors text-align-center row desktop-12 min-h-15 padding-bottom-2 container">
 
                 <h2>Patrocinadores</h2>
                 <div class="sponsor-slider min-h-6">
                     <img class="img-responsive" src="static/img/sponsor1.jpg" width="180" alt="logo">
                     <img class="img-responsive" src="static/img/sponsor2.png" width="180" alt="logo">
                     <img class="img-responsive" src="static/img/sponsor3.png" width="120" alt="logo">
+                    <img class="img-responsive" src="static/img/sponsor4.jpg" width="160" alt="logo">
                 </div>
 
                 <h3>Seja um patrocinador</h3>
                 <p>Interessado? Descubra as oportunidades e benefícios.</p>
                 <a class="btn-basic btn-blue" href="mailto:jean@ucl.br?Subject=Patrocínio Grupy ES">informe-se</a>
+
+            </div>
+        </section>
+
+        <!-- Comunidade -->
+        <section id="comunidade">
+            <div class="sponsors text-align-center row desktop-12 min-h-15 padding-bottom-2 container">
+
+                <h2>Participe da Comunidade Grupy-es</h2>
+                <p>Venha fazer parte da nossa comunidade no Telegram.</p>
+                <a class="btn-basic btn-blue" target="_blank" href="https://t.me/grupyes">Entrar no grupy-es</a>
 
             </div>
         </section>
@@ -135,6 +221,8 @@
                 </div>
             </div>
         </section>
+
+
 
         <!-- VENUE -->
         <section id="venue">
